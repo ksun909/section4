@@ -1,8 +1,8 @@
 import pickle
 
 # 파일 이름과 데이터
-bfilename = "c:/section4/test.bin"
-tfilename = "c:/section4/test.txt"
+bfilename = "C:/Users/ksun9/OneDrive/바탕 화면/!!!Python/section4/test.bin"
+tfilename = "C:/Users/ksun9/OneDrive/바탕 화면/!!!Python/section4/test.txt"
 
 data1 = 77
 data2 = "Hello, world!"
@@ -22,7 +22,7 @@ with open(tfilename, "wt") as f:
      f.write('\n')
      f.writelines('\n'.join(data3))
 
-# 바이너리 읽기(역직렬화)
+#바이너리 읽기(역직렬화)
 with open(bfilename, "rb") as f:
     b = pickle.load(f) #loads(문자열로부터 역직렬화)
     print(type(b),' Binary Read1 | ',b)
